@@ -37,9 +37,9 @@ char	**ft_split(char const *s, char c)
 	int		j;
 	int		start;
 
-	arr = malloc(sizeof(char *) * (wordcount(s, c) + 1));
-	if (!arr || !s)
+	if (!s)
 		return (NULL);
+	arr = malloc(sizeof(char *) * (wordcount(s, c) + 1));
 	j = 0;
 	i = 0;
 	while (s[i])
